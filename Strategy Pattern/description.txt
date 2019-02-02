@@ -1,0 +1,22 @@
+
+Problem:
+
+Game characters like king, queen, knight etc can use any one weapon at a time, however they can change their weapons throughout the game.
+
+Details:
+Character
+Abstract class.
+Has a member variable charName and is composed of weaponBehaviour.
+The method fight() lets the character fight with his/ her weapon of choice. We are able to set the weapon of choice in runtime through the member method setWeaponOfChoice().
+We can also set the weapon of choice compile time by overriding the setWeaponOfChoice() in the child class.
+
+WeaponBehaviour
+Interface.
+Has a method useWeapon().
+All the classes implementing this interface implement this method according to the specific weapon they represent.useWeapon().
+
+King, Queen, Knight
+Classes extending Character class.
+SwordBehaviour, PoisonBehaviour, AxeBehaviour
+Classes implementing WeaponBehaviour interface.
+Represent a specific weapon.
